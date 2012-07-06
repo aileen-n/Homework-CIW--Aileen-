@@ -30,7 +30,7 @@ div.clear{
 /*------------------------------------- Header ---------------------------------------------*/
 div.header{
 	width:auto;
-	min-height:200px;	
+	min-height:212px;	
 }
 
 div.header-left{
@@ -44,15 +44,45 @@ div.header-left{
 div.header-right{
 	min-height:inherit;
 	margin-left:352px;
+/*	padding:33px 0 20px 0;*/
 }
 
+/*----- menu -----*/
+
 div.menu{
-	min-height:70px;
+	min-height:18px;
+	margin-top:33px;
+}
+
+div.menu ul{
+	list-style-type:none;
 	
 }
 
+div.menu li{
+	float:left;
+	
+}
+
+div.menu a{
+	margin-right:33px;
+	display:block;
+	color:#A09F9E;
+	text-decoration:none;
+	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-transform:capitalize;	
+}
+
+div.menu li:hover a {
+	color:#515151;
+
+}
+
+/*----- Welcome -----*/
+
 div.welcome{
-	min-height:114px;
+	min-height:114px;	
 }
 
 div.welcome h1{
@@ -83,30 +113,65 @@ div.content{
 	min-height:654px;
 }
 
+/*-------- Content up --------*/
 div.content-up{
-	min-height:340px;
+	width:940px;
+	min-height:308px;
+	margin-left:32px;
+	background-image:url(image/slide-sainthimat.jpg);
 }
 
+div.text{
+	background-color:black;
+	opacity:0.8;
+	width:300px;
+	height:66px;
+	color:white;
+	float:right;
+	margin-top:175px;
+	/*position:absolute;	kodum ravesh behtare? position ya float?
+	bottom:100px;
+	left:675px;*/
+}
+
+div.text p{
+	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;	
+	font-size:18px;
+	line-height:10px;
+	padding:10px 15px;
+	margin:0;	
+}
+
+div.text p:first-of-type{
+	color:#DEDC00;	
+}
+
+/*------ Content down ----- */
+
 div.content-down{
-	min-height:307px;
-	
+	min-height:230px;
+	padding:52px 30px;
 }
 
 div.content-left{
-	width:340px;
-	min-height:inherit;
+	width:300px;
+	min-height:200px;
 	float:left;	
+}
+
+div.content p{
+	color:#A09F9E;	
 }
 
 div.content-right{
 	float:right;
-	width:340px;
-	min-height:inherit;	
+	width:300px;
+	min-height:200px;	
 }
 
 div.content-middle{
-	margin:0 340px;
-	min-height:inherit;
+	margin:0 320px;
+	min-height:200px;
 }
 
 
@@ -165,17 +230,28 @@ div.footer-bottem{
 	min-height:inherit;
 }
 
-/*--------------------------------------------------------------------------------------------*/
 </style>
 </head>
 
+<!-----------------------------------------------------------------------------------------
+-->
 <body>
 	<div class="container">
     	<div class="header">
         	<div class="header-left"></div>
             <div class="header-right">
-            	<div class="menu"></div>
+            	<div class="menu">
+                	<ul>
+                    	<li><a href="#">Accueil</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
                 <div class="welcome">
+                <br/>
                 	<h1>Une agence web à taille humaine, une équipe à votre écoute.</h1>
                     <h2>Chez Impala Webstudio, nous sommes une équipe de passionnés, créative et dynamique. Nous réalisons des sites internet clairs et efficaces. De la simplicité en somme, pour vous et vos clients.</h2>
                 </div>
@@ -184,11 +260,28 @@ div.footer-bottem{
             <div class="clear"></div>
         </div>
     	<div class="content">
-        	<div class="content-up"></div>
+        	<div class="content-up">
+            	<div class="text">
+                <p>Nouvelle réalisation E-commerce</p>
+            	<p>Sainthimat</p>
+                </div>
+            </div>
             <div class="content-down">
-            	<div class="content-left"></div>
-                <div class="content-right"></div>
-                <div class="content-middle"></div>
+            	<div class="content-left">
+                	<img src="image/visuel_equipe.jpg">
+                    <br/><br/>
+                	<p>C’est dans l’enceinte d’une ancienne école que l’équipe d’Impala Webstudio 	active  ses méninges et sa créativité. Un lieu avant tout convivial, où le travail et la bonne humeur font bon ménage.</p>
+                </div>
+                <div class="content-right">
+                	<img src="image/visuel_coulisses.jpg">
+                    <br/><br/>
+                    <p>Les dessous de l’agence, la vie au 43 rue Charlie Chaplin, les dernières actualités, mais aussi les nouvelles réalisations... En parcourant notre blog, plongez dans les coulisses d’Impala Webstudio.</p>
+                </div>
+                <div class="content-middle">
+                <img src="image/visuel_cafe.jpg">
+                <br/><br/>
+                <p>Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
+                </div>
                 <div class="clear"></div>
             </div>
             <div class="clear"></div>
