@@ -30,7 +30,7 @@ div.clear{
 /*------------------------------------- Header ---------------------------------------------*/
 div.header{
 	width:auto;
-	min-height:212px;	
+	min-height:202px;	
 }
 
 div.header-left{
@@ -110,15 +110,16 @@ div.welcome h2{
 
 div.content{
 	width:auto;
-	min-height:654px;
+	min-height:645px;
 }
 
 /*-------- Content up --------*/
 div.content-up{
 	width:940px;
-	min-height:308px;
+	min-height:318px;
 	margin-left:32px;
-	background-image:url(image/slide-sainthimat.jpg);
+	background:url(image/slide-sainthimat.jpg) no-repeat center;
+	border:5px solid #E9E9E9;
 }
 
 div.text{
@@ -150,64 +151,121 @@ div.text p:first-of-type{
 
 div.content-down{
 	min-height:230px;
-	padding:52px 30px;
+	padding:42px 30px;
 }
 
 div.content-left{
 	width:300px;
 	min-height:200px;
 	float:left;	
+	position:relative;
 }
 
 div.content p{
 	color:#A09F9E;	
 }
 
+div.t p {
+	background-color:#DEDC00;
+	font-size:22px;
+	color:#525251;	
+	position:absolute;
+	left:0;
+	top:-10px;
+	z-index:2;
+	padding:3px 10px;
+	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;
+}
+
+div.content a:hover {
+	opacity:0.7;	
+}
+
 div.content-right{
 	float:right;
 	width:300px;
-	min-height:200px;	
+	min-height:200px;
+	position:relative;	
 }
 
 div.content-middle{
 	margin:0 320px;
 	min-height:200px;
+	position:relative;
 }
 
 
 /*------------------------------------- Footer ---------------------------------------------*/
+
 
 div.footer{
 	width:auto;
 	min-height:380px;
 }
 
+/*---------------- Footer up ---------------*/
+
 div.footer-up{
-	min-height:245px;
+	min-height:190px;
+	padding:33px 30px;
 }
+
+/*----- Footer-up1 ------*/
 
 div.footer-up1{
 	float:left;
-	width:220px;
+	width:238px;
 	min-height:inherit;	
 }
 
+div.footer-up1{
+	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#666;	
+}
+
+div.footer-up1 ul{
+	list-style-type:none;
+	margin-top:3px;	
+}
+
+div.footer-up1 li{
+	padding-top:6px;		
+}
+
+div.footer-up1 a{
+	color:#999;
+	text-decoration:none;
+	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-transform:capitalize;	
+}
+
+div.footer-up1 li:hover a{
+	color:#333333;	
+	opacity:0.7;
+	}
+
+/*--------*/
+
 div.footer-up2{
 	float:left;
-	width:270px;
+	width:240px;
 	min-height:inherit;	
 }
 
 div.footer-up3{
 	float:left;
-	width:230px;
+	width:235px;
 	min-height:inherit;	
 }
 
 div.footer-up4{
-	margin-left:725px;
+	margin-left:720px;
 	min-height:inherit;	
 }
+
+/*---------- Footer down -----------*/
 
 div.footer-down{
 	min-height:130px;
@@ -259,6 +317,9 @@ div.footer-bottem{
             </div>
             <div class="clear"></div>
         </div>
+
+<!--------------------------------Content----------------------------------------------->        
+       
     	<div class="content">
         	<div class="content-up">
             	<div class="text">
@@ -268,27 +329,43 @@ div.footer-bottem{
             </div>
             <div class="content-down">
             	<div class="content-left">
-                	<img src="image/visuel_equipe.jpg">
+                	<div class="t"><p>L'équipe</p></div>
+                	<a href="#"><img src="image/visuel_equipe.jpg"></a>
                     <br/><br/>
                 	<p>C’est dans l’enceinte d’une ancienne école que l’équipe d’Impala Webstudio 	active  ses méninges et sa créativité. Un lieu avant tout convivial, où le travail et la bonne humeur font bon ménage.</p>
                 </div>
                 <div class="content-right">
-                	<img src="image/visuel_coulisses.jpg">
+                	<div class="t"><p>En coulisses</p></div>
+                	<a href="#"><img src="image/visuel_coulisses.jpg"></a>
                     <br/><br/>
                     <p>Les dessous de l’agence, la vie au 43 rue Charlie Chaplin, les dernières actualités, mais aussi les nouvelles réalisations... En parcourant notre blog, plongez dans les coulisses d’Impala Webstudio.</p>
                 </div>
                 <div class="content-middle">
-                <img src="image/visuel_cafe.jpg">
-                <br/><br/>
-                <p>Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
+                	<div class="t"><p>Une pause café ?</p></div>
+                	<a href="#"><img src="image/visuel_cafe.jpg"></a>
+                	<br/><br/>
+                	<p>Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
                 </div>
                 <div class="clear"></div>
             </div>
             <div class="clear"></div>
         </div>
+
+<!--------------------------------Footer----------------------------------------------->        
+        <hr>      
     	<div class="footer">
         	<div class="footer-up">
-            	<div class="footer-up1"></div>
+            	<div class="footer-up1">
+                	<h5>Impala Webstudio</h5>
+                    <ul>
+                    	<li> » <a href="#">Accueil</a></li>
+                        <li> » <a href="#">Studio</a></li>
+                        <li> » <a href="#">Services</a></li>
+                        <li> » <a href="#">Portfolio</a></li>
+                        <li> » <a href="#">Blog</a></li>
+                        <li> » <a href="#">Contact</a></li>
+                    </ul>
+                </div>
                 <div class="footer-up2"></div>
 				<div class="footer-up3"></div>
                 <div class="footer-up4"></div>
