@@ -2,360 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Layout 2 (project)</title>
+<link type="text/css" rel="stylesheet" href="layout2.css" />
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link rel="icon" type="image/png" href="http://www.impala-webstudio.fr/favicon.png" />
 
-<style type="text/css">
-* {
-	margin:0;
-	padding:0;
-}
 
-div{
-	border:1px orange dotted;
-}
-
-div.container{
-	background-image:url(image/impala.png);
-	width:1007px;
-	height:1256px;
-	margin:0 auto;	
-}
-
-div.clear{
-	width:0;
-	height:0;
-	clear:both;	
-}
-
-/*------------------------------------- Header ---------------------------------------------*/
-div.header{
-	width:auto;
-	min-height:202px;	
-}
-
-div.header-left{
-	width:250px;
-	min-height:200px;	
-	float:left;
-	background-image:url(image/impala-webstudio.png);
-	margin-left:57px;
-}
-
-div.header-right{
-	min-height:inherit;
-	margin-left:352px;
-/*	padding:33px 0 20px 0;*/
-}
-
-/*----- menu -----*/
-
-div.menu{
-	min-height:18px;
-	margin-top:33px;
-}
-
-div.menu ul{
-	list-style-type:none;
-	
-}
-
-div.menu li{
-	float:left;
-	
-}
-
-div.menu a{
-	margin-right:33px;
-	display:block;
-	color:#A09F9E;
-	text-decoration:none;
-	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;
-	font-size:16px;
-	text-transform:capitalize;	
-}
-
-div.menu li:hover a {
-	color:#515151;
-
-}
-
-/*----- Welcome -----*/
-
-div.welcome{
-	min-height:114px;	
-}
-
-div.welcome h1{
-	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;	
-	font-size:20px;
-	line-height:36px;
-	font-weight:normal;
-	color:#515151;
-	margin:0;
-	padding:0;
-}
-
-div.welcome h2{
-	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;	
-	font-size:16px;
-	font-weight: normal;
-	line-height:24px;
-	color:#A09F9E;
-	margin:0;
-	padding:0;	
-}
-
-
-/*------------------------------------- Content ---------------------------------------------*/
-
-div.content{
-	width:auto;
-	min-height:645px;
-}
-
-/*-------- Content up --------*/
-div.content-up{
-	width:940px;
-	min-height:318px;
-	margin-left:32px;
-	background:url(image/slide-sainthimat.jpg) no-repeat center;
-	border:5px solid #E9E9E9;
-}
-
-div.text{
-	background-color:black;
-	opacity:0.8;
-	width:300px;
-	height:66px;
-	color:white;
-	float:right;
-	margin-top:175px;
-	/*position:absolute;	kodum ravesh behtare? position ya float?
-	bottom:100px;
-	left:675px;*/
-}
-
-div.text p{
-	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;	
-	font-size:18px;
-	line-height:10px;
-	padding:10px 13px;
-	margin:0;	
-}
-
-div.text p:first-of-type{
-	color:#DEDC00;	
-}
-
-/*------ Content down ----- */
-
-div.content-down{
-	min-height:230px;
-	padding:42px 30px;
-}
-
-div.content-left{
-	width:300px;
-	min-height:200px;
-	float:left;	
-	position:relative;
-}
-
-div.content-down p{
-	color:#A09F9E;
-	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;
-	font-size:15px;
-	text-decoration:none;
-	text-transform:none;	
-}
-
-div.t p {
-	background-color:#DEDC00;
-	font-size:22px;
-	color:#525251;	
-	position:absolute;
-	left:0;
-	top:-10px;
-	z-index:2;
-	padding:3px 10px;
-	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;
-}
-
-div.content a:hover {
-	opacity:0.7;	
-}
-
-div.content-right{
-	float:right;
-	width:300px;
-	min-height:200px;
-	position:relative;	
-}
-
-div.content-middle{
-	margin:0 320px;
-	min-height:200px;
-	position:relative;
-}
-
-
-/*------------------------------------- Footer ---------------------------------------------*/
-
-
-div.footer{
-	width:auto;
-	min-height:380px;
-}
-
-/*---------------- Footer up ---------------*/
-
-div.footer-up{
-	min-height:190px;
-	padding:33px 30px;
-}
-
-/*----- Footer-up1 ------*/
-
-div.footer-up1{
-	float:left;
-	width:238px;
-	min-height:inherit;	
-}
-
-div.footer-up h5{               /*-- use for up1 & up3 --*/
-	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
-	text-transform:uppercase;
-	color:#666;	
-}
-
-/*--- List For Footer Up1 & Up2 ---*/
-
-div.footer-up ul{
-	list-style-type:none;
-	margin-top:8px;	
-}
-
-div.footer-up li{
-	padding-top:6px;		
-}
-
-div.footer-up a , p{
-	color:#999;
-	text-decoration:none;
-	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
-	font-size:11px;
-	text-transform:capitalize;	
-}
-
-div.footer-up li:hover a{
-	color:#333333;	
-	opacity:0.7;
-	}
-
-/*---- Footer-up2 ----*/
-
-div.footer-up2{
-	float:left;
-	width:240px;
-	min-height:inherit;	
-}
-
-div.footer-up2 h5{
-	background-image:url(image/img.jpg);
-	background-repeat:no-repeat;
-	background-position:left center;
-	padding-left:17px;
-	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
-	text-transform:uppercase;
-	color:#666;	
-}
-
-/*---- Footer-up3 ----*/
-
-div.footer-up3{
-	float:left;
-	width:235px;
-	min-height:inherit;	
-}
-
-p.highlight{
-	background-color:#DEDC00;
-	display:inline;
-	margin-left:5px;
-	padding:2px;
-}
-
-/*---- Footer-up4 ----*/
-
-div.footer-up4{
-	margin-left:720px;
-	min-height:inherit;	
-}
-
-p.newsletter{
-	margin-top:25px;
-	color:#999999;
-	font-size:13px;
-	margin-bottom:13px;
-	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
-}
-	
-input.input{
-	padding:6px;
-	border:1px solid #bbbdbf;
-	background-color:#e3e1dd;
-	color:#999;
-	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
-}
-	
-input.input:hover{
-	background-color:#E9E9E9;
-}
-
-input.ok{
-	padding:6px;
-	margin-left:-3px;
-	color:#73716f;
-	background-color:#c7c6c4;
-	border:1px solid #bbbdbf;
-	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
-}
-
-input.ok:hover{
-	background-color:#CCC;
-}
-
-p.note{
-	margin-top:15px;
-	color:#999999;
-	font-size:10px;
-	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
-}
-
-/*---------- Footer down -----------*/
-
-div.footer-down{
-	min-height:130px;
-}
-
-div.footer-copyright{
-	width:440px;
-	min-height:inherit;
-	float:left;
-}
-
-div.footer-menu{
-	width:300px;
-	min-height:inherit;
-	float:left;
-}
-
-div.footer-bottem{
-	margin-left:740px;
-	min-height:inherit;
-}
-
-</style>
 </head>
 
 <!-----------------------------------------------------------------------------------------
@@ -450,14 +102,14 @@ div.footer-bottem{
                     <ul>
                    
                         <li>
-                        	<p class="highlight"><img src="image/tell.gif" alt="tel">
+                        	<p><img src="image/tell.gif" alt="tel">
                                 <span>03 20 26 96 25</span>
                             </p>
                         </li>     
                         
                         
                         <li>
-                            <p class="highlight">	
+                            <p>	
                                 <img src="image/atsign@.jpg" alt="@">
                                 <a href="#"><span>contact@impala-webstudio.fr</span></a>
                             </p> 
@@ -465,10 +117,9 @@ div.footer-bottem{
                        
                         
                         <li>
-                        <img src="image/letter.jpg" alt="letter">
-                        	<p class="highlight">
-                                 
-                                 <span>43 rue Charlie Chaplin<br/>59100 ROUBAIX</span>
+                        	<p>
+                            	<img src="image/letter.jpg" align="top" alt="letter" >
+                            	<span>43 rue Charlie Chaplin<br/>59100 ROUBAIX</span>
                             </p>
                         </li>
                         
@@ -487,7 +138,8 @@ div.footer-bottem{
 					<p class="newsletter">Restez informés des dernières actus et potins de l'agence!</p>	
 
         			<form action="http://impala-webstudio.fr/" method="get" >
-					<input type="text" name="q" size="20" class="input" placeholder="votre email ici"/>
+					<input type="text" name="q" size="20" class="input" placeholder="votre email ici"/> 
+                    <!-- place holder dar google chrome javab nemidahad! ama dar mozila dorost ast -->
 					<input type="button" value="ok" class="ok"/>
                     </form>
 					
@@ -501,9 +153,24 @@ div.footer-bottem{
  <!--------------------- Content--------------->
             
             <div class="footer-down">
-            	<div class="footer-copyright"></div>
-				<div class="footer-menu"></div>
-                <div class="footer-bottem"></div>
+            	<div class="footer-copyright">
+                	<p class="copyright">
+                    Copyright &copy; 2010 Impala Webstudio - Tous droits réservés.<br />Site déclaré à la CNIL -<a href="#" >Mentions légales</a>
+                    </p>
+                </div>
+				<div class="footer-menu">
+                
+                	<img src="image/footer-pic.jpg" width="197" height="120" class="pic"/>
+					<a href="http://facebook.com" class="globalsite"><img src="image/fb.jpg" width="20" height="22" /></a>
+                    <a href="http://twitter.com" class="globalsite"><img src="image/twiter.jpg" width="28" height="22" /></a>
+                    <a href="http://fliker.com" class="globalsite"><img src="image/fliker.jpg" width="24" height="22" /></a>
+
+        			<a href="http://rss.com" class="globalsite"><img src="image/rss.jpg" width="20" height="22"/></a>
+
+                <a href="#" class="hover"><p class="bottem">Rejoignez-nous</p></a>
+      		    <a href="#" class="hover"><p class="bottem"><img src="image/lock.gif" width="9" height="12"/>&nbsp;Espace Client</p></a>
+                
+                </div>
                 <div class="clear"></div>
             </div>
             <div class="clear"></div>
