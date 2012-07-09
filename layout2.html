@@ -139,7 +139,7 @@ div.text p{
 	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;	
 	font-size:18px;
 	line-height:10px;
-	padding:10px 15px;
+	padding:10px 13px;
 	margin:0;	
 }
 
@@ -161,8 +161,12 @@ div.content-left{
 	position:relative;
 }
 
-div.content p{
-	color:#A09F9E;	
+div.content-down p{
+	color:#A09F9E;
+	font-family:"ColaborateThinRegular", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	text-decoration:none;
+	text-transform:none;	
 }
 
 div.t p {
@@ -218,22 +222,24 @@ div.footer-up1{
 	min-height:inherit;	
 }
 
-div.footer-up1{
+div.footer-up h5{               /*-- use for up1 & up3 --*/
 	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
 	text-transform:uppercase;
 	color:#666;	
 }
 
-div.footer-up1 ul{
+/*--- List For Footer Up1 & Up2 ---*/
+
+div.footer-up ul{
 	list-style-type:none;
-	margin-top:3px;	
+	margin-top:8px;	
 }
 
-div.footer-up1 li{
+div.footer-up li{
 	padding-top:6px;		
 }
 
-div.footer-up1 a{
+div.footer-up a , p{
 	color:#999;
 	text-decoration:none;
 	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
@@ -241,12 +247,12 @@ div.footer-up1 a{
 	text-transform:capitalize;	
 }
 
-div.footer-up1 li:hover a{
+div.footer-up li:hover a{
 	color:#333333;	
 	opacity:0.7;
 	}
 
-/*--------*/
+/*---- Footer-up2 ----*/
 
 div.footer-up2{
 	float:left;
@@ -254,15 +260,76 @@ div.footer-up2{
 	min-height:inherit;	
 }
 
+div.footer-up2 h5{
+	background-image:url(image/img.jpg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	padding-left:17px;
+	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#666;	
+}
+
+/*---- Footer-up3 ----*/
+
 div.footer-up3{
 	float:left;
 	width:235px;
 	min-height:inherit;	
 }
 
+p.highlight{
+	background-color:#DEDC00;
+	display:inline;
+	margin-left:5px;
+	padding:2px;
+}
+
+/*---- Footer-up4 ----*/
+
 div.footer-up4{
 	margin-left:720px;
 	min-height:inherit;	
+}
+
+p.newsletter{
+	margin-top:25px;
+	color:#999999;
+	font-size:13px;
+	margin-bottom:13px;
+	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
+}
+	
+input.input{
+	padding:6px;
+	border:1px solid #bbbdbf;
+	background-color:#e3e1dd;
+	color:#999;
+	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
+}
+	
+input.input:hover{
+	background-color:#E9E9E9;
+}
+
+input.ok{
+	padding:6px;
+	margin-left:-3px;
+	color:#73716f;
+	background-color:#c7c6c4;
+	border:1px solid #bbbdbf;
+	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
+}
+
+input.ok:hover{
+	background-color:#CCC;
+}
+
+p.note{
+	margin-top:15px;
+	color:#999999;
+	font-size:10px;
+	font-family:'ColaborateBoldRegular', Arial, Helvetica, sans-serif;
 }
 
 /*---------- Footer down -----------*/
@@ -355,7 +422,8 @@ div.footer-bottem{
         <hr>      
     	<div class="footer">
         	<div class="footer-up">
-            	<div class="footer-up1">
+            	
+                <div class="footer-up1">
                 	<h5>Impala Webstudio</h5>
                     <ul>
                     	<li> » <a href="#">Accueil</a></li>
@@ -366,11 +434,72 @@ div.footer-bottem{
                         <li> » <a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-up2"></div>
-				<div class="footer-up3"></div>
-                <div class="footer-up4"></div>
+                
+                <div class="footer-up2">
+                	<h5>Quoi de neuf ?</h5>
+                    <ul>
+                		<li> » <a href="#">Responsive design. Ou comment faire entrer une girafe dans une Twingo en trois temps</a></li>
+                        <li> » <a href="#">Musique maestro</a></li>
+                        <li> » <a href="#">♬ J’entends le loup, le renard et la belette…</a></li>
+                        <li> » <a href="#">La véritable nature des Impalas</a></li>
+                    </ul>
+                </div>
+                
+				<div class="footer-up3">
+                	<h5>Restons en contact</h5>
+                    <ul>
+                   
+                        <li>
+                        	<p class="highlight"><img src="image/tell.gif" alt="tel">
+                                <span>03 20 26 96 25</span>
+                            </p>
+                        </li>     
+                        
+                        
+                        <li>
+                            <p class="highlight">	
+                                <img src="image/atsign@.jpg" alt="@">
+                                <a href="#"><span>contact@impala-webstudio.fr</span></a>
+                            </p> 
+                        </li>
+                       
+                        
+                        <li>
+                        <img src="image/letter.jpg" alt="letter">
+                        	<p class="highlight">
+                                 
+                                 <span>43 rue Charlie Chaplin<br/>59100 ROUBAIX</span>
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                <img src="image/map.jpg" alt="google-map">
+                                Trouvez-nous rapidement <br/>sur 
+                                <a href="#"><b>Google Maps</b></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-up4">
+                	<h5>Recevez notre Newsletter</h5>
+					<p class="newsletter">Restez informés des dernières actus et potins de l'agence!</p>	
+
+        			<form action="http://impala-webstudio.fr/" method="get" >
+					<input type="text" name="q" size="20" class="input" placeholder="votre email ici"/>
+					<input type="button" value="ok" class="ok"/>
+                    </form>
+					
+                    <p class="note">Votre adresse email ne sera en aucun cas revendue, ou utilisée par une société autre que la nôtre.</p>
+
+                </div>
                 <div class="clear"></div>
             </div>
+            <hr>
+ 
+ <!--------------------- Content--------------->
+            
             <div class="footer-down">
             	<div class="footer-copyright"></div>
 				<div class="footer-menu"></div>
