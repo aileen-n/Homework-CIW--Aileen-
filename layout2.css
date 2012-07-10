@@ -6,11 +6,8 @@
 	padding:0;
 }
 
-html{
-	background-color:#F5F5F5;
-}
-
 div.container{
+	padding-top:1px;
 	background-color:#F5F5F5;
 	width:1000px;
 	margin:0 auto;	
@@ -23,6 +20,7 @@ div.clear{
 }
 
 /*------------------------------------- Header ---------------------------------------------*/
+
 div.header{
 	width:auto;
 	min-height:202px;	
@@ -39,7 +37,6 @@ div.header-left{
 div.header-right{
 	min-height:inherit;
 	margin-left:352px;
-/*	padding:33px 0 20px 0;*/
 }
 
 /*----- menu -----*/
@@ -72,6 +69,10 @@ div.menu a{
 div.menu li:hover a {
 	color:#515151;
 
+}
+
+div.menu span{
+	color:#515151;	
 }
 
 /*----- Welcome -----*/
